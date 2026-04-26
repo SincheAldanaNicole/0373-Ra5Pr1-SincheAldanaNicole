@@ -17,6 +17,7 @@
           <xsl:for-each select="/biblioteca/llibre">
             <li>
               <xsl:value-of select="titol"/>
+              <xsl:value-of select="autor"/>
             </li>
           </xsl:for-each>
         </ul>
