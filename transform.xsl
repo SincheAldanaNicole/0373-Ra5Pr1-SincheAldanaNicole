@@ -28,7 +28,7 @@
             <th>Any</th>
             <th>Preu</th>
           </tr>
-          <xsl:for-each select="/biblioteca/llibre">
+          <xsl:for-each select="/biblioteca/llibre[@estat='disponible']">
             <tr>
               <td><xsl:value-of select="titol"/></td>
               <td><xsl:value-of select="autor"/></td>
