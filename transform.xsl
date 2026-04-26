@@ -7,9 +7,19 @@
         <p>Llista de documents disponibles</p>
         <p>
           <xsl:value-of select="/biblioteca/llibre[1]/titol"/>
+          -
           <xsl:value-of select="/biblioteca/llibre[1]/autor"/>
+        </p>
+        <p>
           <xsl:value-of select="/biblioteca/revista/@codi"/>
         </p>
+        <ul>
+          <xsl:for-each select="/biblioteca/llibre">
+            <li>
+              <xsl:value-of select="titol"/>
+            </li>
+          </xsl:for-each>
+        </ul>
       </body>
     </html>
   </xsl:template>
