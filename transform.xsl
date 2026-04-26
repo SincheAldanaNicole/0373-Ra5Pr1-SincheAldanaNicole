@@ -8,6 +8,7 @@
         <p>
           <xsl:value-of select="/biblioteca/llibre[1]/titol"/>
           <xsl:value-of select="/biblioteca/llibre[1]/autor"/>
+          <xsl:value-of select="/biblioteca/revista/@codi"/>
         </p>
       </body>
     </html>
