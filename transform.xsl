@@ -37,6 +37,12 @@
               <td><xsl:value-of select="autor"/></td>
               <td><xsl:value-of select="any"/></td>
               <td><xsl:value-of select="preu"/></td>
+              <td>
+              <xsl:choose>
+                <xsl:when test="@estat='prestat'">En prestec</xsl:when>
+                <xsl:otherwise>Disponible</xsl:otherwise>
+              </xsl:choose>
+              </td>
             </tr>
           </xsl:for-each>
         </table>
