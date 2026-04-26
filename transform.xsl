@@ -15,6 +15,7 @@
         </p>
         <ul>
           <xsl:for-each select="/biblioteca/llibre">
+          <xsl:sort select="any"/>
             <li>
               <xsl:value-of select="titol"/>
               <xsl:value-of select="autor"/>
@@ -29,6 +30,7 @@
             <th>Preu</th>
           </tr>
           <xsl:for-each select="/biblioteca/llibre[@estat='disponible']">
+          <xsl:sort select="any"/>
             <tr>
               <td><xsl:value-of select="titol"/></td>
               <xsl:if test="any &lt; 1980">
