@@ -7,6 +7,7 @@
         <p>Llista de documents disponibles</p>
         <p>
           <xsl:value-of select="/biblioteca/llibre[1]/titol"/>
+          <xsl:value-of select="/biblioteca/llibre[1]/autor"/>
         </p>
       </body>
     </html>
