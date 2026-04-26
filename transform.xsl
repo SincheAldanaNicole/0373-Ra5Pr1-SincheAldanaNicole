@@ -48,7 +48,13 @@
             </tr>
           </xsl:for-each>
         </table>
+        <p>Total libros: 
+          <xsl:value-of select="count(/biblioteca/llibre)"/>
+        </p>
       </body>
     </html>
+  </xsl:template>
+  <xsl:template match="llibre">
+    <li><xsl:value-of select="titol"/></li>
   </xsl:template>
 </xsl:stylesheet>
