@@ -4,6 +4,7 @@
     <html>
       <body>
         <h1>Biblioteca</h1>
+        <p>Llista de documents disponibles</p>
       </body>
     </html>
   </xsl:template>
